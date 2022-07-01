@@ -2,14 +2,14 @@ from random import random, seed
 from time import time
 
 
-def isSorted(array, size):                                          # Проверка на упорядоченность
+def isSorted(array, size):                                              # Проверка на упорядоченность
     for i in range (0, size - 1):
         if array[i] > array[i + 1]:
             return False
     return True
 
 
-def printArray(array, size):                                        # Вывод массива
+def printArray(array, size):                                            # Вывод массива
     if isSorted(array, size):
         print('Sorted!')
     else:
@@ -21,7 +21,7 @@ def printArray(array, size):                                        # Вывод
     print('\n')
 
 
-def sort(array, size):                                              # Сортировка массива
+def sort(array, size):                                                  # Сортировка массива
     for i in range (0, size):
         for j in range (0, size - 1):
             if array[j] > array[j + 1]:
